@@ -74,7 +74,7 @@ function testEndGame() {
   var userPoints = document.querySelector(".user-points");
   var computerPoints = document.querySelector(".computer-points");
 
-  if (userPoints.textContent == 5 || computerPoints == 5) {
+  if (userPoints.textContent == 5 || computerPoints.textContent == 5) {
     userPoints.textContent = 0;
     computerPoints.textContent = 0;
     console.log("end game");
