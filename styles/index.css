@@ -1,27 +1,12 @@
 /* GENERAL */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .page-container {
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-/* TITLE */
-h1 {
-  width: 100%;
-  background-color: antiquewhite;
-  text-align: center;
-  padding: 30px;
 }
 
 /* GAME START */
@@ -54,7 +39,6 @@ h1 {
 /* ICONS CONTAINER */
 .icons-container {
   width: 100%;
-  margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
