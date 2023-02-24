@@ -21,16 +21,25 @@
 
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 }
 
-.user-option,
-.computer-option {
+.user-result-container,
+.computer-result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 250px;
   height: 250px;
 
   background-color: antiquewhite;
   border-radius: 20px;
+}
+
+.user-result,
+.computer-result {
+  font-size: 100px;
 }
 
 .user-name {
@@ -50,15 +59,12 @@
 }
 
 .option {
+  font-size: 80px;
   padding: 50px;
   margin: 50px 0 50px 0;
 
   background-color: aliceblue;
   border-radius: 20px;
-}
-
-.option > i {
-  font-size: 80px;
 }
 
 .scissors {

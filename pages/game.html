@@ -7,29 +7,32 @@
     <title>Rock-Paper-Scissor</title>
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/game.css" />
-    <script src="script.js" defer="defer"></script>
+    <script src="../script.js" defer="defer"></script>
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.css" />
     <link rel="stylesheet" href="../fontawesome/css/solid.css" />
   </head>
   <body>
     <div class="page-container">
       <h1>ROCK PAPER SCISSORS</h1>
-      <p class="points">5 - 1</p>
+      <p class="points">
+        <span class="user-points">5</span> -
+        <span class="computer-points">1</span>
+      </p>
       <div class="result-container">
         <div class="user-container">
           <p class="user-name">NONAME</p>
-          <div class="user-option"></div>
+          <div class="user-result-container">
+            <i class="user-result"></i>
+          </div>
         </div>
-        <div class="computer-option"></div>
+        <div class="computer-result-container">
+          <i class="computer-result"></i>
+        </div>
       </div>
       <div class="options-container">
-        <button class="option">
-          <i class="fa-solid fa-hand-fist rock"></i>
-        </button>
-        <button class="option"><i class="fa-solid fa-hand paper"></i></button>
-        <button class="option">
-          <i class="fa-solid fa-hand-scissors scissors"></i>
-        </button>
+        <i class="fa-solid fa-hand-fist option rock"></i>
+        <i class="fa-solid fa-hand option paper"></i>
+        <i class="fa-solid fa-hand-scissors option scissors"></i>
       </div>
     </div>
   </body>
