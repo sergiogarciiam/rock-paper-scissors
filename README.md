@@ -4,7 +4,7 @@ Rock-Paper-Scissors game created with html, css and js.
 
 ## About the Game
 
-The project is from The Odin [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) curriculum.
+The project is from [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) curriculum.
 
 ### Features
 
