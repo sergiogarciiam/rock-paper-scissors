@@ -6,8 +6,8 @@
 }
 
 /* TITLE */
-.title,
-h1 {
+
+.title {
   width: 100%;
   background-color: antiquewhite;
   text-align: center;
@@ -19,8 +19,12 @@ h1 {
   text-decoration: none;
   color: black;
 
+  font-size: 16px;
+
   margin: auto 20px auto 20px;
-  padding: 10px 50px;
+  padding: 20px 50px;
 
   border-radius: 20px;
+  border: none;
+  cursor: pointer;
 }

@@ -88,7 +88,7 @@
   align-items: center;
 }
 
-.title {
+.finish-game-container > .title {
   border-radius: 18px 18px 0 0;
 }
 
