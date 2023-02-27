@@ -1,5 +1,7 @@
+// GLOBAL VARIABLES
 var options = document.querySelectorAll(".option");
 
+// EVENTS TO OPTIONS
 options.forEach((option) => {
   option.addEventListener("click", (e) => {
     addUserResult(e);
@@ -9,6 +11,7 @@ options.forEach((option) => {
   });
 });
 
+// OPTION CHOOSE FROM USER
 function addUserResult(e) {
   var userResult = document.querySelector(".user-result");
 
@@ -18,6 +21,7 @@ function addUserResult(e) {
   userResult.classList.add(e.target.classList[1]);
 }
 
+// OPTION CHOOSE FROM COMPUTER
 function addComputerResult() {
   var computerResult = document.querySelector(".computer-result");
   var classComputerResult = computerResult.classList;
@@ -44,6 +48,7 @@ function addComputerResult() {
   }
 }
 
+// COMPARE RESULTS
 function compareResult() {
   var userResult = document.querySelector(".user-result");
   var userPoints = document.querySelector(".user-points");
@@ -54,7 +59,6 @@ function compareResult() {
   var classComputerResult = computerResult.classList[2];
 
   if (classUserResult === classComputerResult) {
-    console.log("tie");
   } else if (
     (classUserResult === "fa-hand-fist" &&
       classComputerResult === "fa-hand-scissors") ||
@@ -63,21 +67,39 @@ function compareResult() {
       classComputerResult === "fa-hand")
   ) {
     userPoints.textContent = +userPoints.textContent + 1;
-    console.log("user win");
   } else {
     computerPoints.textContent = +computerPoints.textContent + 1;
-    console.log("computer win");
   }
 }
 
+// TEST END GAME
 function testEndGame() {
   var userPoints = document.querySelector(".user-points");
   var computerPoints = document.querySelector(".computer-points");
 
   if (userPoints.textContent == 5 || computerPoints.textContent == 5) {
-    userPoints.textContent = 0;
-    computerPoints.textContent = 0;
-    console.log("end game");
+    // Variables
+    var finishGameWindow = document.querySelector(".finish-game-container");
+    var titleResult = document.querySelector(".title");
+    var finishPoints = document.querySelector(".points-finish");
+    var playAgainButton = document.querySelector(".play-again");
+
+    // Result
+    finishGameWindow.style.display = "flex";
+    titleResult.textContent =
+      userPoints.textContent > computerPoints.textContent
+        ? "YOU WIN!"
+        : "GAME OVER!";
+    finishPoints.textContent =
+      userPoints.textContent + " - " + computerPoints.textContent;
+
+    // Play again
+    playAgainButton.addEventListener("click", () => {
+      finishGameWindow.style.display = "none";
+
+      userPoints.textContent = 0;
+      computerPoints.textContent = 0;
+    });
   }
 }
 

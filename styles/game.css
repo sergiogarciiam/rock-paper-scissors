@@ -70,3 +70,41 @@
 .scissors {
   rotate: 90deg;
 }
+
+/* FINISH GAME */
+.finish-game-container {
+  position: absolute;
+  margin: 10% auto;
+
+  width: 25%;
+  height: 45%;
+  background-color: chocolate;
+  border-radius: 20px;
+
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+.title {
+  border-radius: 18px 18px 0 0;
+}
+
+.points-finish {
+  font-size: xx-large;
+}
+
+.buttons-container {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons-container > button {
+  padding: 20px 20px;
+  border-radius: 20px;
+}
