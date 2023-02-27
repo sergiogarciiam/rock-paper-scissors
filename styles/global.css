@@ -13,3 +13,14 @@ h1 {
   text-align: center;
   padding: 40px;
 }
+
+.button {
+  background-color: antiquewhite;
+  text-decoration: none;
+  color: black;
+
+  margin: auto 20px auto 20px;
+  padding: 10px 50px;
+
+  border-radius: 20px;
+}

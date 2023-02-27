@@ -94,13 +94,23 @@ function testEndGame() {
       userPoints.textContent + " - " + computerPoints.textContent;
 
     // Play again
-    playAgainButton.addEventListener("click", () => {
-      finishGameWindow.style.display = "none";
-
-      userPoints.textContent = 0;
-      computerPoints.textContent = 0;
-    });
+    playAgainButton.addEventListener("click", resetGame);
   }
+}
+
+// RESET GAME
+function resetGame() {
+  var finishGameWindow = document.querySelector(".finish-game-container");
+  var userPoints = document.querySelector(".user-points");
+  var computerPoints = document.querySelector(".computer-points");
+  var userResult = document.querySelector(".user-result");
+  var computerResult = document.querySelector(".computer-result");
+
+  finishGameWindow.style.display = "none";
+  userResult.classList.remove(userResult.classList[2]);
+  computerResult.classList.remove(computerResult.classList[2]);
+  userPoints.textContent = 0;
+  computerPoints.textContent = 0;
 }
 
 function getRandom() {
