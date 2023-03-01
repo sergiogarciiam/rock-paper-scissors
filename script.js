@@ -79,12 +79,14 @@ function testEndGame() {
 
   if (userPoints.textContent == 5 || computerPoints.textContent == 5) {
     // Variables
+    var optionsContainer = document.querySelector(".options-container");
     var finishGameWindow = document.querySelector(".finish-game-container");
     var titleResult = document.querySelector(".title");
     var finishPoints = document.querySelector(".points-finish");
     var playAgainButton = document.querySelector(".play-again");
 
     // Result
+    optionsContainer.style.pointerEvents = "none";
     finishGameWindow.style.display = "flex";
     titleResult.textContent =
       userPoints.textContent > computerPoints.textContent
@@ -100,12 +102,14 @@ function testEndGame() {
 
 // RESET GAME
 function resetGame() {
+  var optionsContainer = document.querySelector(".options-container");
   var finishGameWindow = document.querySelector(".finish-game-container");
   var userPoints = document.querySelector(".user-points");
   var computerPoints = document.querySelector(".computer-points");
   var userResult = document.querySelector(".user-result");
   var computerResult = document.querySelector(".computer-result");
 
+  optionsContainer.style.pointerEvents = "all";
   finishGameWindow.style.display = "none";
   userResult.classList.remove(userResult.classList[2]);
   computerResult.classList.remove(computerResult.classList[2]);

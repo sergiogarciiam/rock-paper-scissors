@@ -10,10 +10,18 @@
     <script src="../script.js" defer="defer"></script>
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.css" />
     <link rel="stylesheet" href="../fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="../fontawesome/css/brands.css" />
   </head>
   <body>
     <div class="page-container">
-      <h1 class="title">ROCK PAPER SCISSORS</h1>
+      <!-- Nav -->
+      <div class="nav">
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></i></a>
+        <h1 class="title">ROCK PAPER SCISSORS</h1>
+        <a href="https://github.com/sergiogarciiam/rock-paper-scissors" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+      </div>
+
+      <!-- Game -->
       <p class="points">
         <span class="user-points">0</span> -
         <span class="computer-points">0</span>
@@ -34,8 +42,12 @@
         <i class="fa-solid fa-hand option paper"></i>
         <i class="fa-solid fa-hand-scissors option scissors"></i>
       </div>
+
+      <!-- Finish Game -->
       <div class="finish-game-container">
-        <h2 class="title">YOU WIN!</h2>
+        <div class="nav">
+          <h2 class="title">YOU WIN!</h2>
+        </div>
         <p class="points-finish"></p>
         <div class="buttons-container">
           <button class="button play-again">PLAY AGAIN</button>

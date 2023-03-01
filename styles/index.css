@@ -41,9 +41,6 @@ body {
   font-size: 300px;
 }
 
-.rock {
-}
-
 .rock,
 .scissors {
   rotate: 45deg;
