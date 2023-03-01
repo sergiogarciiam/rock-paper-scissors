@@ -73,6 +73,10 @@
   cursor: pointer;
 }
 
+.option:hover {
+  color: var(--main-color);
+}
+
 .scissors {
   rotate: 90deg;
 }

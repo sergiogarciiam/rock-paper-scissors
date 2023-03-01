@@ -38,6 +38,10 @@
   font-size: 30px;
 }
 
+.nav a:hover {
+  color: var(--background-color);
+}
+
 /* BUTTONS */
 .button {
   background-color: var(--main-color);
@@ -52,4 +56,8 @@
   border-radius: 20px;
   border: none;
   cursor: pointer;
+}
+
+.button:hover {
+  color: var(--background-color);
 }
