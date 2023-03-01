@@ -13,11 +13,13 @@
 /* POINTS */
 .points {
   font-size: 70px;
+  color: var(--text-color);
 }
 
 /* RESULT CONTAINER */
 .result-container {
   width: 75%;
+  color: var(--text-color);
 
   display: flex;
   justify-content: space-around;
@@ -33,7 +35,7 @@
   width: 250px;
   height: 250px;
 
-  background-color: antiquewhite;
+  background-color: var(--main-color);
   border-radius: 20px;
 }
 
@@ -45,6 +47,7 @@
 .user-name {
   margin-left: 20px;
   font-size: x-large;
+  color: var(--text-color);
 }
 
 /* OPTIONS CONTAINER */
@@ -54,7 +57,7 @@
   display: flex;
   justify-content: space-around;
 
-  background-color: antiquewhite;
+  background-color: var(--main-color);
   border-radius: 20px;
 }
 
@@ -63,7 +66,8 @@
   padding: 50px;
   margin: 50px 0 50px 0;
 
-  background-color: aliceblue;
+  background-color: var(--background-color);
+  color: var(--text-color);
   border-radius: 20px;
 
   cursor: pointer;
@@ -80,7 +84,8 @@
 
   width: 25%;
   height: 45%;
-  background-color: chocolate;
+  background-color: var(--background-color);
+  color: var(--text-color);
   border-radius: 20px;
 
   display: none;
@@ -91,7 +96,7 @@
 }
 
 .finish-game-container > .title {
-  border-radius: 18px 18px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .points-finish {

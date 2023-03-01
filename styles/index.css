@@ -24,6 +24,7 @@ body {
 
   display: flex;
   justify-content: space-between;
+  color: var(--main-color);
 }
 
 .icons-container > i {
