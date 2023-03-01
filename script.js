@@ -81,17 +81,15 @@ function testEndGame() {
     // Variables
     var optionsContainer = document.querySelector(".options-container");
     var finishGameWindow = document.querySelector(".finish-game-container");
-    var titleResult = document.querySelector(".title");
+    var gameResult = document.querySelector(".game-result");
     var finishPoints = document.querySelector(".points-finish");
     var playAgainButton = document.querySelector(".play-again");
 
     // Result
     optionsContainer.style.pointerEvents = "none";
     finishGameWindow.style.display = "flex";
-    titleResult.textContent =
-      userPoints.textContent > computerPoints.textContent
-        ? "YOU WIN!"
-        : "GAME OVER!";
+    gameResult.textContent =
+      userPoints.textContent == 5 ? "YOU WIN!" : "GAME OVER!";
     finishPoints.textContent =
       userPoints.textContent + " - " + computerPoints.textContent;
 
