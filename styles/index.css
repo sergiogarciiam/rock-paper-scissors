@@ -14,19 +14,8 @@ body {
 }
 
 /* GAME START */
-.start-game-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-
-  margin: 0 50px 100px 0;
-}
-
-.user-name {
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
+.start-game {
+  margin-top: 200px;
 }
 
 /* ICONS CONTAINER */
