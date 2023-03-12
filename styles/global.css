@@ -1,8 +1,9 @@
 /* GENERAL */
 :root {
-  --background-color: #2b2b2b;
-  --main-color: #121211;
-  --text-color: white;
+  --background-color: #222831;
+  --main-color: #393e46;
+  --secondary-color: #eeeeee;
+  --special-effect: #00adb5;
 }
 
 * {
@@ -19,7 +20,7 @@
 .nav {
   width: 100%;
   background-color: var(--main-color);
-  color: var(--text-color);
+  color: var(--secondary-color);
   padding: 40px;
 
   display: flex;
@@ -33,22 +34,23 @@
 }
 
 .nav > a {
-  color: var(--text-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 30px;
 }
 
 .nav a:hover {
-  color: var(--background-color);
+  color: var(--special-effect);
 }
 
 /* BUTTONS */
 .button {
   background-color: var(--main-color);
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--secondary-color);
 
   font-size: 16px;
+  font-weight: bold;
 
   margin: auto 20px auto 20px;
   padding: 20px 50px;
@@ -59,5 +61,6 @@
 }
 
 .button:hover {
-  color: var(--background-color);
+  color: var(--special-effect);
+  border: 1px solid var(--special-effect);
 }

@@ -8,8 +8,8 @@ The project is from [The Odin Project](https://www.theodinproject.com/lessons/fo
 
 ### Features
 
-- It's a normal rock-paper-scissors game best of 5 rounds.
-- It's not support responsive design.
+- It's a normal rock-paper-scissors game best of 5 rounds
+- It's not support responsive design (look [game screenshots](#game-screenshots))
 
 ### Tools and technology
 
@@ -20,12 +20,37 @@ The project is from [The Odin Project](https://www.theodinproject.com/lessons/fo
 - Git and GitHub
 - HTML and CSS
 - JavaScript
+- Color Hunt (I use this [palette](https://colorhunt.co/palette/222831393e4600adb5eeeeee))
 
 ## Screenshots
 
 ### Design in Figma
 
-![design in figma](./images/first-design.png)
+![first design in figma](./images/first-design.png)
+
+#### Adding colors!! (using the palette)
+
+![improve design in figma](./images/improve-design.png)
+
+<a name="game-screenshots"></a>
+
+### Game Screenshots
+
+#### Main menu (using the palette)
+
+![main menu](./images/main-menu.png)
+
+#### Hover effect
+
+![main menu with hover](./images/main-menu-hover.png)
+
+#### Game
+
+![game](./images/game.png)
+
+#### Finish game menu
+
+![finish game](./images/finish-game.png)
 
 ## Author
 

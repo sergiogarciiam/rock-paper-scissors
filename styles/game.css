@@ -13,13 +13,13 @@
 /* POINTS */
 .points {
   font-size: 70px;
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 /* RESULT CONTAINER */
 .result-container {
   width: 75%;
-  color: var(--text-color);
+  color: var(--secondary-color);
 
   display: flex;
   justify-content: space-around;
@@ -46,8 +46,10 @@
 
 .user-name {
   margin-left: 20px;
-  font-size: x-large;
-  color: var(--text-color);
+  font-size: 20px;
+  font-weight: bold;
+
+  color: var(--secondary-color);
 }
 
 /* OPTIONS CONTAINER */
@@ -67,14 +69,14 @@
   margin: 50px 0 50px 0;
 
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--secondary-color);
   border-radius: 20px;
 
   cursor: pointer;
 }
 
 .option:hover {
-  color: var(--main-color);
+  color: var(--special-effect);
 }
 
 .scissors {
@@ -89,7 +91,7 @@
   width: 25%;
   height: 45%;
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--secondary-color);
   border-radius: 20px;
 
   display: none;
@@ -97,10 +99,12 @@
   justify-content: flex-start;
   gap: 20px;
   align-items: center;
+
+  border: 2px solid var(--special-effect);
 }
 
-.finish-game-container > .title {
-  border-radius: 20px 20px 0 0;
+.finish-game-container > .nav {
+  border-radius: 20px 20px 0px 0px;
 }
 
 .points-finish {
