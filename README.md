@@ -44,7 +44,7 @@ The project is from [The Odin Project](https://www.theodinproject.com/lessons/fo
 
 ![main menu with hover](./images/main-menu-hover.png)
 
-#### Game
+#### Game in action
 
 ![game](./images/game.png)
 
