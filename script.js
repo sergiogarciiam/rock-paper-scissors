@@ -18,7 +18,14 @@ function addUserResult(e) {
   if (userResult.classList.length > 2) {
     userResult.classList.remove(userResult.classList[2]);
   }
+
   userResult.classList.add(e.target.classList[1]);
+
+  if (userResult.classList.contains("fa-hand-scissors")) {
+    userResult.classList.add("scissors");
+  } else {
+    userResult.classList.remove("scissors");
+  }
 }
 
 // OPTION CHOOSE FROM COMPUTER
@@ -33,18 +40,19 @@ function addComputerResult() {
   var random = getRandom();
   switch (random) {
     case 0:
+      classComputerResult.remove("scissors");
       classComputerResult.add("fa-hand-fist");
       break;
 
     case 1:
+      classComputerResult.remove("scissors");
       classComputerResult.add("fa-hand");
       break;
 
     case 2:
       classComputerResult.add("fa-hand-scissors");
+      classComputerResult.add("scissors");
       break;
-    default:
-      console.log(random);
   }
 }
 
@@ -52,19 +60,27 @@ function addComputerResult() {
 function compareResult() {
   var userResult = document.querySelector(".user-result");
   var userPoints = document.querySelector(".user-points");
-  var classUserResult = userResult.classList[2];
+
+  var classUserResult = userResult.classList.contains("fa-hand-fist")
+    ? "fist"
+    : userResult.classList.contains("fa-hand-scissors")
+    ? "scissors"
+    : "hand";
 
   var computerResult = document.querySelector(".computer-result");
   var computerPoints = document.querySelector(".computer-points");
-  var classComputerResult = computerResult.classList[2];
+
+  var classComputerResult = computerResult.classList.contains("fa-hand-fist")
+    ? "fist"
+    : computerResult.classList.contains("fa-hand-scissors")
+    ? "scissors"
+    : "hand";
 
   if (classUserResult === classComputerResult) {
   } else if (
-    (classUserResult === "fa-hand-fist" &&
-      classComputerResult === "fa-hand-scissors") ||
-    (classUserResult === "fa-hand" && classComputerResult === "fa-hand-fist") ||
-    (classUserResult === "fa-hand-scissors" &&
-      classComputerResult === "fa-hand")
+    (classUserResult === "fist" && classComputerResult === "scissors") ||
+    (classUserResult === "hand" && classComputerResult === "fist") ||
+    (classUserResult === "scissors" && classComputerResult === "hand")
   ) {
     userPoints.textContent = +userPoints.textContent + 1;
   } else {
@@ -109,8 +125,12 @@ function resetGame() {
 
   optionsContainer.style.pointerEvents = "all";
   finishGameWindow.style.display = "none";
+
+  userResult.classList.remove("scissors");
   userResult.classList.remove(userResult.classList[2]);
+  computerResult.classList.remove("scissors");
   computerResult.classList.remove(computerResult.classList[2]);
+
   userPoints.textContent = 0;
   computerPoints.textContent = 0;
 }
