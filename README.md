@@ -36,7 +36,7 @@ The project is from [The Odin Project](https://www.theodinproject.com/lessons/fo
 
 ### Game Screenshots
 
-#### Main menu (using the palette)
+#### Main menu
 
 ![main menu](./images/main-menu.png)
 
@@ -48,7 +48,7 @@ The project is from [The Odin Project](https://www.theodinproject.com/lessons/fo
 
 ![game](./images/game.png)
 
-#### Finish game menu
+#### Finish menu
 
 ![finish game](./images/finish-game.png)
 
