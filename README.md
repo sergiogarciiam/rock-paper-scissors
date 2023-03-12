@@ -9,7 +9,7 @@ The project is from [The Odin Project](https://www.theodinproject.com/lessons/fo
 ### Features
 
 - It's a normal rock-paper-scissors game best of 5 rounds
-- It's not support responsive design (look [game screenshots](#game-screenshots))
+- It's not support responsive design ([game screenshots](#game-screenshots))
 
 ### Tools and technology
 
