@@ -54,7 +54,7 @@ The project is from [The Odin Project](https://www.theodinproject.com/lessons/fo
 
 ## Author
 
-- [Sergio García](https://github.com/sergiogarciiam)
+[Sergio García](https://github.com/sergiogarciiam)
 
 ## License
 
