@@ -1,7 +1,7 @@
 /* GENERAL */
 .page-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -18,12 +18,12 @@
 
 /* RESULT CONTAINER */
 .result-container {
-  width: 75%;
   color: var(--secondary-color);
 
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  gap: 500px;
 }
 
 .user-result-container,
@@ -58,15 +58,17 @@
 
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   background-color: var(--main-color);
   border-radius: 20px;
+
+  padding: 50px 0;
 }
 
 .option {
   font-size: 80px;
   padding: 50px;
-  margin: 50px 0 50px 0;
 
   background-color: var(--background-color);
   color: var(--secondary-color);
@@ -88,8 +90,8 @@
   position: absolute;
   margin: 10% auto;
 
-  width: 25%;
-  height: 45%;
+  min-width: 500px;
+  min-height: 450px;
   background-color: var(--background-color);
   color: var(--secondary-color);
   border-radius: 20px;
@@ -122,4 +124,31 @@
 .buttons-container > button {
   padding: 20px 20px;
   border-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .result-container {
+    gap: 20px;
+  }
+
+  .user-result-container,
+  .computer-result-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .user-result,
+  .computer-result {
+    font-size: 60px;
+  }
+
+  .option {
+    font-size: 40px;
+    padding: 25px;
+  }
+
+  .finish-game-container {
+    min-width: 250px;
+  }
 }

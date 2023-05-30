@@ -64,3 +64,10 @@
   color: var(--special-effect);
   border: 1px solid var(--special-effect);
 }
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .nav > a {
+    font-size: 25px;
+  }
+}

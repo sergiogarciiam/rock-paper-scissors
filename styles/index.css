@@ -5,17 +5,12 @@ body {
 
 .page-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-/* GAME START */
-.start-game {
-  margin-top: 200px;
 }
 
 /* ICONS CONTAINER */
@@ -34,4 +29,11 @@ body {
 .rock,
 .scissors {
   rotate: 45deg;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .icons-container > i {
+    font-size: 100px;
+  }
 }
